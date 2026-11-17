@@ -23,6 +23,12 @@ const App = () => {
   const func = ({a, b}: funcProps): string => {
     return a + b;
   }
+
+  const reusablefunc = <T extends string | number>(a: T, b: T): T => {
+    return (a as any) + (b as any);
+
+  }
+  console.log(reusablefunc(10, 20))
   const changeName = () => setGender("female")
 
   const createstudents =() =>{
