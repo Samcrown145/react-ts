@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Btn from './Btn';
 
 enum genderProbs {
   male,
@@ -32,7 +33,9 @@ const App = () => {
     })
   }
  
-  return<div> {age}</div>
+  return<div> {age}
+  <Btn title="Click Me" color="blue" type="button"></Btn>
+  </div>
 }
 
 export default App
